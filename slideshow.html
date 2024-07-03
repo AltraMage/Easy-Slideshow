@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <script src="./slideshow.js" defer></script>
+    <link rel="stylesheet" href="./slideshow.css">
+</head>
+<body>
+    <h1>Slideshow</h1>
+    <div class="slideshow">
+        <button id="left" onclick="prev()">left</button><button id="right" onclick="next()">right</button>
+
+        <img class="slide" src="./images/mont.jpg" alt="">
+        <img class="slide" src="./images/nate.jpg" alt="">
+        <img class="slide" src="./images/snow.jpg" alt="">
+		<!-- <div class="slide"> 
+			<h1>Hello World</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div> -->
+        
+    </div>
+
+    <h2>Documentation:</h2>
+    <ul>
+        <li><a href="#0">About</a></li>
+        <li><a href="#1">Usage</a></li>
+        <li><a href="#2">Troubleshooting</a></li>
+        <li><a href="#3">Boring legal stuff</a></li>
+    </ul>
+    <h3 id="0">About</h3>
+    <p>I couldn't find an easy html slideshow that worked with <i>N</i> amount of slides, so I made a template that can use any amount from 1 to any amount.</p>
+    <p>FYI, you can have whatever text you want in the buttons, it autosets to the arrow chars in the JS</p>
+    <p>Change the button design in the sampled css, the .slideshow button refers only to the nagivation buttons for the slides.</p>
+    <p>All images should be the same size, is a little funky if they aren't. At the very least could they be similar height, please?</p>
+    <h3 id="1">Usage</h3>
+    <p>Step 1. Import JS / css (css is optional but aligns the buttons) Using the script & link tags respectively. <i>N.B.</i>Javascript tag should have defer after the src.</p>
+    <a href="./slideshow.js">Javascript</a>
+    <a href="./slideshow.css">CSS</a>
+    <p>Step 2. Create a div with a class named slideshow (class="slideshow"), this will be your container for the css.</p>
+    <p>Step 3. Add buttons x2, One with  id="left", other with id="right". Those are your navigation buttons.</p>
+    <p>Step 4. Add slides & content. Each slide can be its own div or image. Link these elements with class="slide".</p>
+    <p>If everything has gone properly you should now have a working slideshow.</p>
+    <h3 id="2">Troubleshooting</h3>
+    <p>Make sure the Javascript and CSS are in the same directory as the webpage; not just linked.</p>
+    <p></p>
+    <h3 id="3">Boring legal</h3>
+    <p>Made by Logan Simonsen 2023 (Github.com/AltraMage)</p>
+    <p>Code avalible under The Unlicense. tl;dr Use it for whatever, but it comes with no warrenty and I hold no Liability if something goes bad.</p>
+    </body>
+</html>

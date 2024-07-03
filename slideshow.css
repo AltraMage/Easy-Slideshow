@@ -1,0 +1,26 @@
+.slideshow{
+    position: relative;
+    /* Width is only defined as I was testing with text. Should be the same size as the images */
+    width: 1000px;
+}
+
+#right{
+    position: absolute;
+    right: 4%;
+}
+
+#left{
+    position: absolute;
+    left: 4%;
+}
+
+.slideshow button{
+  background: none;
+  border: none;
+  color: rgb(255, 0, 0);
+  font-size: 2em;
+  border-radius: 25px;
+  width: 1.1em;
+  height: 1.1em;
+  font-weight: 500;
+}
